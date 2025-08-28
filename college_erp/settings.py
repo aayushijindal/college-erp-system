@@ -11,7 +11,7 @@ SECRET_KEY = "your-secret-key"
 # Debug mode
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["college-erp-system-mcp1.onrender.com"]
 
 # Installed apps
 INSTALLED_APPS = [

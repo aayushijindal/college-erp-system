@@ -39,6 +39,7 @@ REST_FRAMEWORK = {
 
 # Middleware
 MIDDLEWARE = [
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -95,6 +96,7 @@ USE_TZ = True
 
 # Static files
 STATIC_URL = "/static/"
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # Default auto field
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
